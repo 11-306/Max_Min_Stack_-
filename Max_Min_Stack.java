@@ -17,10 +17,10 @@ public class Max_Min_Stack {
         void push(int info) {
             data.push(info);
 
-            if (stackMin.isEmpty() || stackMin.peek() > info) {
+            if (stackMin.isEmpty() || stackMin.peek() => info) {
                 stackMin.push(info);
             }
-            if (stackMax.isEmpty() || stackMax.peek() < info) {
+            if (stackMax.isEmpty() || stackMax.peek() <= info) {
                 stackMax.push(info);
             }
         }
